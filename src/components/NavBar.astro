@@ -1,0 +1,103 @@
+---
+import { Image } from "astro:assets"
+import hamburger from "../assets/navbar/hamburger.svg"
+import person from "../assets/navbar/person.svg"
+import search from "../assets/navbar/search.svg"
+---
+
+<nav>
+  <div class="logo-container">
+    <img src="logo-huella-verde.svg" alt="logo" />
+    <p>Huella Verde</p>
+  </div>
+
+  <ul class="links">
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/about">¿Quines Somos?</a></li>
+    <li><a href="/education">Portal Educativo</a></li>
+  </ul>
+
+  <div class="nav-card">
+    <div class="nav-card-icon-container">
+      <a href="">
+        <Image src={search} alt="search" height={25} />
+      </a>
+    </div>
+
+    <div class="nav-card-icon-container">
+      <a href="/login">
+        <Image src={person} alt="login" height={25} />
+      </a>
+    </div>
+
+    <di class="nav-card-icon-container">
+      <a href="">
+        <Image src={hamburger} alt="hamburger" height={25} />
+      </a>
+    </di>
+  </div>
+</nav>
+
+<style>
+  html {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+  }
+
+  @media (min-width: 950px) {
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 1rem 0 1rem;
+    }
+
+    nav > div {
+      display: flex;
+      align-items: center;
+    }
+
+    nav > div > img {
+      margin-right: 0.5rem;
+    }
+
+    nav > div > p {
+      color: #142f38;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    ul > li {
+      margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+      list-style: none;
+    }
+
+    ul > li > a:hover {
+      border-bottom: solid 2px #142f38;
+    }
+
+    ul > li > a {
+      text-decoration: none;
+      color: #142f38;
+      padding-bottom: 7px;
+    }
+
+    .nav-card {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: space-around;
+      background-color: #142f38;
+      padding: 12px 20px 12px 20px;
+      border-radius: 20px 3px 20px 0px / 20px 0px 20px 0px;
+    }
+
+    .nav-card-icon-container {
+      margin: 5px;
+    }
+  }
+</style>
