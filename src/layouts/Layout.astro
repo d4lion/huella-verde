@@ -1,5 +1,6 @@
 ---
 import NavBar from "../components/NavBar.astro"
+import FooTer from "../components/FooTer.astro"
 
 interface Props {
   title: string
@@ -28,6 +29,7 @@ const cream = "rgba(239, 240, 227, 1)"
   <body>
     <NavBar />
     <slot />
+    <FooTer />
   </body>
 </html>
 <style is:global define:vars={{ cream }}>
