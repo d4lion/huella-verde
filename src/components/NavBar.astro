@@ -3,12 +3,17 @@ import { Image } from "astro:assets"
 import hamburger from "../assets/navbar/hamburger.svg"
 import person from "../assets/navbar/person.svg"
 import search from "../assets/navbar/search.svg"
+import LogoHuellaVerde from "../assets/navbar/logo-huella-verde.svg"
 ---
 
-<nav>
+<nav id="navigation">
   <div class="logo-container">
-    <img src="logo-huella-verde.svg" alt="logo" />
-    <p>Huella Verde</p>
+    <a href="/">
+      <Image src={LogoHuellaVerde} alt="logo" />
+    </a>
+    <a href="/">
+      <p>Huella Verde</p>
+    </a>
   </div>
 
   <ul class="links">
@@ -50,6 +55,7 @@ import search from "../assets/navbar/search.svg"
       justify-content: space-around;
       align-items: center;
       margin: 0 1rem 0 1rem;
+      z-index: 99;
     }
 
     nav > div {
@@ -61,7 +67,7 @@ import search from "../assets/navbar/search.svg"
       margin-right: 0.5rem;
     }
 
-    nav > div > p {
+    nav > div > a > p {
       color: #142f38;
       font-size: 20px;
       font-weight: 500;
@@ -77,7 +83,7 @@ import search from "../assets/navbar/search.svg"
     }
 
     ul > li > a:hover {
-      border-bottom: solid 2px #142f38;
+      border-bottom: solid 3px #318161;
     }
 
     ul > li > a {
@@ -91,13 +97,17 @@ import search from "../assets/navbar/search.svg"
       align-items: center;
       justify-items: center;
       justify-content: space-around;
-      background-color: #142f38;
+      background-color: #318161;
       padding: 12px 20px 12px 20px;
       border-radius: 20px 3px 20px 0px / 20px 0px 20px 0px;
     }
 
     .nav-card-icon-container {
       margin: 5px;
+    }
+
+    .nav-card-icon-container:hover {
+      transform: scale(1.2);
     }
   }
 </style>
