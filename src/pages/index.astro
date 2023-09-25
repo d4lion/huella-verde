@@ -7,6 +7,8 @@ import planta2 from "../assets/index/plant-2.svg"
 import planta3 from "../assets/index/plant-3.svg"
 import planta4 from "../assets/index/plant-4.svg"
 import planta5 from "../assets/index/plant-5.svg"
+
+const cream = "rgba(239, 240, 227, 1)"
 ---
 
 <Layout title="Huella Verde">
@@ -111,7 +113,7 @@ import planta5 from "../assets/index/plant-5.svg"
   </section>
 </Layout>
 
-<style>
+<style define:vars={{ cream }}>
   img {
     width: 560px;
     height: 560px;
@@ -169,14 +171,14 @@ import planta5 from "../assets/index/plant-5.svg"
 
   .cards-section {
     background-color: #318161;
-    height: 80vh;
+    height: fit-content;
   }
 
   .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    margin: 0 1rem 0 1rem;
+    margin: 0 2rem 0 3rem;
   }
 
   .card {
@@ -185,9 +187,9 @@ import planta5 from "../assets/index/plant-5.svg"
     color: black;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 50px;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #c1e2d4;
+    background-color: var(--cream);
   }
 
   .card > img {
