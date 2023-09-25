@@ -1,0 +1,112 @@
+---
+import { Image } from "astro:assets"
+const caqui = "rgba(30,60,50)"
+
+//Assts import
+import GitHubIcon from "../assets/footer/github.svg"
+import AstroIcon from "../assets/footer/astro.svg"
+import DriveIcon from "../assets/footer/googledrive.svg"
+
+import LogoHuellaVerde from "../assets/navbar/logo-huella-verde.svg"
+---
+
+<section class="footer-section">
+  <div class="logo-container">
+    <Image src={LogoHuellaVerde} alt="Logo" />
+    <p>Huella Verde</p>
+  </div>
+  <div class="about-container">
+    <h1 class="title">Ayuda</h1>
+    <ul>
+      <li><a href="/preguntas">Preguntas</a></li>
+      <li><a href="/nosotros">Nosotros</a></li>
+
+      <li><a href="/contactanos">Contactanos</a></li>
+    </ul>
+  </div>
+  <div class="huellaverde-section">
+    <h1 class="title">Huella Verde</h1>
+    <ul>
+      <li><a href="/education">Nuestros Servicios</a></li>
+      <li><a href="/privacidad">Politica De Privacidad</a></li>
+    </ul>
+  </div>
+  <div class="follow-section">
+    <h1 class="title">Siguenos</h1>
+    <div>
+      <a target="_blank" href="https://github.com/daliondev/huella-verde">
+        <Image src={GitHubIcon} alt="github" />
+      </a>
+      <a
+        target="_blank"
+        href="https://drive.google.com/drive/folders/1hYOK7F1gfOink3q3CmBLQG4jbwJeKxBT?usp=sharing"
+      >
+        <Image src={DriveIcon} alt="drive" />
+      </a>
+      <a target="_blank" href="astro.build">
+        <Image src={AstroIcon} alt="astro" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<style define:vars={{ caqui }}>
+  ul {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  ul > li {
+    margin-top: 5px;
+    padding: 5px;
+  }
+
+  ul > li > a:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+  }
+
+  ul > li > a {
+    color: white;
+    font-weight: 400;
+  }
+  .footer-section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--caqui);
+    padding: 2rem;
+  }
+
+  .footer-section .logo-container {
+    display: flex;
+    align-items: center;
+    place-items: center;
+    gap: 10px;
+    padding: 50px;
+  }
+
+  .footer-section .logo-container > p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+
+  .follow-section > div {
+    display: flex;
+    gap: 10px;
+  }
+
+  .follow-section > div > a > img {
+    width: 25px;
+  }
+
+  .title {
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    border-bottom: 2px solid #8de887;
+    width: fit-content;
+    padding: 10px;
+  }
+</style>
