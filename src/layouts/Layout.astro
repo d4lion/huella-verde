@@ -6,6 +6,7 @@ interface Props {
 }
 
 const { title } = Astro.props
+const cream = "rgba(239, 240, 227, 1)"
 ---
 
 <!doctype html>
@@ -29,10 +30,10 @@ const { title } = Astro.props
     <slot />
   </body>
 </html>
-<style is:global>
+<style is:global define:vars={{ cream }}>
   html {
     font-family: "Poppins", sans-serif;
-    background-color: rgba(239, 235, 227, 1);
+    background-color: var(--cream);
   }
 
   code {
