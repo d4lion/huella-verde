@@ -15,37 +15,40 @@ import LogoHuellaVerde from "../assets/navbar/logo-huella-verde.svg"
     <Image src={LogoHuellaVerde} alt="Logo" />
     <p>Huella Verde</p>
   </div>
-  <div class="about-container">
-    <h1 class="title">Ayuda</h1>
-    <ul>
-      <li><a href="/preguntas">Preguntas</a></li>
-      <li><a href="/nosotros">Nosotros</a></li>
 
-      <li><a href="/contactanos">Contactanos</a></li>
-    </ul>
-  </div>
-  <div class="huellaverde-section">
-    <h1 class="title">Huella Verde</h1>
-    <ul>
-      <li><a href="/education">Nuestros Servicios</a></li>
-      <li><a href="/privacidad">Politica De Privacidad</a></li>
-    </ul>
-  </div>
-  <div class="follow-section">
-    <h1 class="title">Siguenos</h1>
-    <div>
-      <a target="_blank" href="https://github.com/daliondev/huella-verde">
-        <Image src={GitHubIcon} alt="github" />
-      </a>
-      <a
-        target="_blank"
-        href="https://drive.google.com/drive/folders/1hYOK7F1gfOink3q3CmBLQG4jbwJeKxBT?usp=sharing"
-      >
-        <Image src={DriveIcon} alt="drive" />
-      </a>
-      <a target="_blank" href="astro.build">
-        <Image src={AstroIcon} alt="astro" />
-      </a>
+  <div class="huella-sections flex gap-[1rem]">
+    <div class="about-container">
+      <h1 class="title">Ayuda</h1>
+      <ul>
+        <li><a href="/preguntas">Preguntas</a></li>
+        <li><a href="/nosotros">Nosotros</a></li>
+
+        <li><a href="/contactanos">Contactanos</a></li>
+      </ul>
+    </div>
+    <div class="about-container">
+      <h1 class="title">Huella Verde</h1>
+      <ul>
+        <li><a href="/education">Nuestros Servicios</a></li>
+        <li><a href="/privacidad">Politica De Privacidad</a></li>
+      </ul>
+    </div>
+    <div class="follow-section">
+      <h1 class="title">Siguenos</h1>
+      <div>
+        <a target="_blank" href="https://github.com/daliondev/huella-verde">
+          <Image src={GitHubIcon} alt="github" />
+        </a>
+        <a
+          target="_blank"
+          href="https://drive.google.com/drive/folders/1hYOK7F1gfOink3q3CmBLQG4jbwJeKxBT?usp=sharing"
+        >
+          <Image src={DriveIcon} alt="drive" />
+        </a>
+        <a target="_blank" href="astro.build">
+          <Image src={AstroIcon} alt="astro" />
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -108,5 +111,23 @@ import LogoHuellaVerde from "../assets/navbar/logo-huella-verde.svg"
     border-bottom: 2px solid #8de887;
     width: fit-content;
     padding: 10px;
+  }
+
+  @media (max-width: 767px) {
+    .footer-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .huella-sections {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .footer-section > .logo-container {
+      display: none;
+    }
   }
 </style>
