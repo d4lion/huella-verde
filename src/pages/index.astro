@@ -15,7 +15,7 @@ const cream = "rgba(239, 240, 227, 1)"
   <section class="hero-section">
     <div class="hero-container">
       <div class="text-container">
-        <button class="rounded-full bg-yellow-200 p-2 text-xs"
+        <button class="rounded-full bg-yellow-200 p-2 text-xs cursor-default"
           >Comienza Ahora</button
         >
         <p class="tittle">LA EDUCACION</p>
@@ -48,66 +48,79 @@ const cream = "rgba(239, 240, 227, 1)"
   <section class="cards-section text-white z-1 relative">
     <div class="card-section-center">
       <div class="card-container">
-        <div class="card">
-          <Image src={planta1} alt="planta" />
-          <div>
-            <h1>Title</h1>
-            <p>
-              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit..."
-            </p>
+        <a href="/education">
+          <div class="card">
+            <Image src={planta1} alt="planta" />
+            <div>
+              <h1>Title</h1>
+              <p>
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <Image src={planta2} alt="planta" />
-          <div>
-            <h1>Title</h1>
-            <p>
-              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit..."
-            </p>
+        </a>
+
+        <a href="">
+          <div class="card">
+            <Image src={planta2} alt="planta" />
+            <div>
+              <h1>Title</h1>
+              <p>
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <Image src={planta3} alt="planta" />
-          <div>
-            <h1>Title</h1>
-            <p>
-              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit..."
-            </p>
+        </a>
+        <a href="">
+          <div class="card">
+            <Image src={planta3} alt="planta" />
+            <div>
+              <h1>Title</h1>
+              <p>
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <Image src={planta4} alt="planta" />
-          <div>
-            <h1>Title</h1>
-            <p>
-              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit..."
-            </p>
+        </a>
+        <a href="">
+          <div class="card">
+            <Image src={planta4} alt="planta" />
+            <div>
+              <h1>Title</h1>
+              <p>
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <Image src={planta5} alt="planta" />
-          <div>
-            <h1>Title</h1>
-            <p>
-              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit..."
-            </p>
+        </a>
+        <a href="">
+          <div class="card">
+            <Image src={planta5} alt="planta" />
+            <div>
+              <h1>Title</h1>
+              <p>
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <Image src={planta1} alt="planta" />
-          <div>
-            <h1>Title</h1>
-            <p>
-              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit..."
-            </p>
+        </a>
+        <a href="">
+          <div class="card">
+            <Image src={planta1} alt="planta" />
+            <div>
+              <h1>Title</h1>
+              <p>
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -115,7 +128,7 @@ const cream = "rgba(239, 240, 227, 1)"
 
 <style define:vars={{ cream }}>
   .hero-img-container > img {
-    width: 90%;
+    width: max-content;
     height: 600px;
     position: relative;
     right: 30px;
