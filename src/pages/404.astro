@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets"
+import LogoHuellaVerde from "../assets/navbar/logo-huella-verde.svg"
+import Layout from "../layouts/Layout.astro"
+
+const cream = "rgba(239, 240, 227, 1)"
+---
+
+<div class="center">
+  <div class="logo-container">
+    <Image src={LogoHuellaVerde} alt="Logo" height={60} />
+    <p>Huella Verde</p>
+  </div>
+  <a href="/"> <button>Regresar</button></a>
+</div>
+
+<style define:vars={{ cream }}>
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .logo-container > p {
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  button {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    background-color: #318161;
+    border-radius: 20px;
+    color: white;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+
+  button:hover {
+    background-color: #4b997a;
+  }
+</style>
