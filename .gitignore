@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # assets original resourses
 resourses
+
+# testing
+test.js

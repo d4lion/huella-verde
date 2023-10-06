@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "nombre": "Tipos de tierra",
+        "title": "Tipos de tierras",
+        "url": "tipos-de-tierra",
+        "image": "https://erc.europa.eu/sites/default/files/styles/magazine_sty/public/magitems/images/VIDEO%20-%20YouTube%20Thumbnails%20%284%29.jpg?itok=QE2iaZQe",
+        "body": "Aprende sobre los diferentes tipos de tierras para el sembrado de todos los tipos de plantas en las huertas"
+    },
+    {
+        "id": 2,
+        "nombre": "Hortalizas",
+        "title": "Sembrado de hortalizas",
+        "url": "hortalizas",
+        "image": "https://media.istockphoto.com/id/1409236261/es/foto/alimentaci%C3%B3n-saludable-antecedentes-de-alimentaci%C3%B3n-saludable-frutas-verduras-bayas.jpg?s=612x612&w=0&k=20&c=HV0f9edLCsmHyms0uBy1yQwJzdWkVGLYzyKeA65qEDE=",
+        "body": "Conoce mas sobre el sembrado de ortalizas"
+    },
+    {
+        "id": 3,
+        "nombre": "Abonos",
+        "title": "Todo sobre abonos",
+        "url": "abonos",
+        "image": "https://sembralia.com/cdn/shop/articles/fertilizantes1.jpg?v=1648560389&width=400",
+        "body": "Aprende sobre los tipos de abonos y fertilizantes en la agricultura"
+    },
+    {
+        "id": 2,
+        "nombre": "Hortalizas",
+        "title": "Sembrado de hortalizas",
+        "url": "hortalizas",
+        "image": "https://erc.europa.eu/sites/default/files/styles/magazine_sty/public/magitems/images/VIDEO%20-%20YouTube%20Thumbnails%20%284%29.jpg?itok=QE2iaZQe",
+        "body": "Conoce mas sobre el sembrado de ortalizas"
+    },
+    {
+        "id": 2,
+        "nombre": "Hortalizas",
+        "title": "Sembrado de hortalizas",
+        "url": "hortalizas",
+        "image": "https://erc.europa.eu/sites/default/files/styles/magazine_sty/public/magitems/images/VIDEO%20-%20YouTube%20Thumbnails%20%284%29.jpg?itok=QE2iaZQe",
+        "body": "Conoce mas sobre el sembrado de ortalizas"
+    },
+    {
+        "id": 2,
+        "nombre": "Hortalizas",
+        "title": "Sembrado de hortalizas",
+        "url": "hortalizas",
+        "image": "https://erc.europa.eu/sites/default/files/styles/magazine_sty/public/magitems/images/VIDEO%20-%20YouTube%20Thumbnails%20%284%29.jpg?itok=QE2iaZQe",
+        "body": "Conoce mas sobre el sembrado de ortalizas"
+    }
+]
+

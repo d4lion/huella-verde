@@ -1,11 +1,27 @@
 ---
+import cursos from "../../data/courses.json"
+
 import Layout from "../../layouts/Layout.astro"
+import Card from "../../components/Card.astro"
+// Data
 ---
 
-<Layout title="Education">
-  <h1>Education</h1>
-  <button
-    class="bg-green-500 rounded-lg text-center m-12 p-5 hover:bg-green-400"
-    ><a href="/education/courses">Education Courses</a></button
+<Layout title="courses">
+  <div
+    class="cards-container grid grid-cols-1 gap-8 m-8 sm:grid-cols-2 lg:grid-cols-3"
   >
+    {
+      cursos.map(({ title, body, url, image }) => (
+        <Card
+          title={title}
+          body={body}
+          href={"/" + url}
+          button_title="Saber mas"
+          image={image}
+        />
+      ))
+    }
+  </div>
 </Layout>
+
+<style></style>
