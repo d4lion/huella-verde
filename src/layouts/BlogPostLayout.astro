@@ -1,0 +1,68 @@
+---
+import Layout from "./Layout.astro"
+
+const { frontmatter } = Astro.props
+
+const posts = await Astro.glob("../pages/education/course/*.md")
+
+const courses = posts.map((course) => ({
+  frontmatter: course.frontmatter,
+  url: course.url,
+}))
+
+console.log(frontmatter)
+
+const cream = "rgba(239, 240, 227, 1)"
+const caqui = "#4b97a"
+---
+
+<Layout title={frontmatter.title}>
+  <div class="post-container">
+    <article class="grid sm:grid-cols-3 mt-5">
+      <h1 class="sm:col-span-2 mb-4">{frontmatter.title}</h1>
+      <img
+        src={frontmatter.image.src}
+        alt={frontmatter.image.alt}
+        class="sm:col-span-2 w-[100%] h-[500px]"
+      />
+      <div class="post-content sm:col-span-2 mt-4 flex flex-col gap-5 text-lg">
+        <slot />
+      </div>
+      <div class="row-start-2 row-end-auto col-start-3">
+        <h2 class="text-center blog-title">Visita nuestros blogs</h2>
+        <ul class="flex flex-col ml-4 gap-4 bg-[#247555] rounded-md text-white">
+          {
+            courses.map((course) => (
+              <a href={course.url} class="p-2 hover:bg-[#557e6e] h-[100%]">
+                {course.frontmatter.title}
+              </a>
+            ))
+          }
+        </ul>
+      </div>
+    </article>
+  </div>
+</Layout>
+<style define:vars={{ cream, caqui }}>
+  .post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 20%;
+    text-align: justify;
+    align-items: center;
+  }
+
+  .blog-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #247555;
+  }
+
+  article > h1 {
+    font-size: 50px;
+    font-family: "Gabarito", cursive;
+    line-height: 50px;
+  }
+</style>
