@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets"
+import CuriosidadCards from "../components/CuriosidadCards.astro"
 import Layout from "../layouts/Layout.astro"
+
 import huertaRegadera from "../assets/index/recycling-5.svg"
 import planta1 from "../assets/index/plant-1.svg"
 import planta2 from "../assets/index/plant-2.svg"
@@ -47,79 +49,43 @@ const cream = "rgba(239, 240, 227, 1)"
   <section class="cards-section text-white z-1 relative">
     <div class="card-section-center">
       <div class="card-container">
-        <a href="/education">
-          <div class="card">
-            <Image src={planta1} alt="planta" />
-            <div>
-              <h1>Title</h1>
-              <p>
-                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-                consectetur, adipisci velit..."
-              </p>
-            </div>
-          </div>
-        </a>
+        <CuriosidadCards
+          title="Flores"
+          href="/"
+          body="La aromaterapia con aceites esenciales de plantas puede aliviar el estrés, mejorar el estado de ánimo y promover la relajación."
+          image={planta5.src}
+        />
 
-        <a href="">
-          <div class="card">
-            <Image src={planta2} alt="planta" />
-            <div>
-              <h1>Title</h1>
-              <p>
-                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-                consectetur, adipisci velit..."
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card">
-            <Image src={planta3} alt="planta" />
-            <div>
-              <h1>Title</h1>
-              <p>
-                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-                consectetur, adipisci velit..."
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card">
-            <Image src={planta4} alt="planta" />
-            <div>
-              <h1>Title</h1>
-              <p>
-                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-                consectetur, adipisci velit..."
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card">
-            <Image src={planta5} alt="planta" />
-            <div>
-              <h1>Title</h1>
-              <p>
-                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-                consectetur, adipisci velit..."
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card">
-            <Image src={planta1} alt="planta" />
-            <div>
-              <h1>Title</h1>
-              <p>
-                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-                consectetur, adipisci velit..."
-              </p>
-            </div>
-          </div>
-        </a>
+        <CuriosidadCards
+          title="Bosques"
+          href="/"
+          body="Los hongos micorrícicos forman vastas redes subterráneas que conectan y ayudan a los árboles a compartir recursos."
+          image={planta1.src}
+        />
+        <CuriosidadCards
+          title="Césped"
+          href="/"
+          body="El bambú crece hasta un metro al día, convirtiéndolo en una de las plantas más rápidas del mundo."
+          image={planta2.src}
+        />
+        <CuriosidadCards
+          title="Autómatas"
+          href="/"
+          body="Algunas plantas, como la Mimosa pudica, pueden replegarse al tacto como una estrategia de defensa ante amenazas."
+          image={planta3.src}
+        />
+        <CuriosidadCards
+          title="Botánica"
+          href="/"
+          body="Los estudios revelan que la música suave puede estimular el crecimiento de las plantas y mejorar su salud."
+          image={planta4.src}
+        />
+        <CuriosidadCards
+          title="Clorofila"
+          href="/"
+          body="La clorofila, pigmento verde, capta luz solar y convierte CO2 en oxígeno, sustento esencial para la vida."
+          image={planta5.src}
+        />
       </div>
     </div>
   </section>
@@ -196,45 +162,6 @@ const cream = "rgba(239, 240, 227, 1)"
     grid-gap: 20px;
     margin: 0 2rem 0 3rem;
     padding-bottom: 3rem;
-  }
-
-  .card:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-  }
-
-  .card {
-    display: grid;
-    border-radius: 20px;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: var(--cream);
-    margin-bottom: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-
-  .card > img {
-    height: 130px;
-  }
-
-  .card > div > h1 {
-    font-family: "Poppins", sans-serif;
-    position: relative;
-    bottom: 30px;
-    text-align: center;
-    color: #142e38;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 82px;
-  }
-
-  .card > div > p {
-    position: relative;
-    bottom: 30px;
   }
 
   @media (max-width: 1060px) {
