@@ -10,7 +10,9 @@ interface Props {
 const { href, title, body, button_title, image } = Astro.props
 ---
 
-<div class="rounded-lg shadow bg-[#1e3c32] border-gray-700 hover:scale-[1.01]">
+<div
+  class="rounded-lg shadow bg-[#1e3c32] border-gray-700 hover:scale-[1.01] card-container"
+>
   <img class="rounded-t-lg p-8 w-max" src={image} alt="" />
 
   <div class="p-5">
@@ -48,6 +50,9 @@ const { href, title, body, button_title, image } = Astro.props
 </div>
 
 <style>
+  .card-container {
+    font-family: "Poppins", sans-serif;
+  }
   div > img {
     height: 400px;
   }
