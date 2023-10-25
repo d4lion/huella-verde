@@ -1,9 +1,14 @@
 ---
-import cursos from "../../data/courses.json"
-
 import Layout from "../../layouts/Layout.astro"
 import Card from "../../components/Card.astro"
 // Data
+
+const posts = await Astro.glob("./course/*.md")
+
+const courses = posts.map((course) => ({
+  frontmatter: course.frontmatter,
+  url: course.url,
+}))
 ---
 
 <Layout title="courses">
@@ -11,17 +16,17 @@ import Card from "../../components/Card.astro"
     class="cards-container grid grid-cols-1 gap-8 m-8 sm:grid-cols-2 lg:grid-cols-3"
   >
     {
-      cursos.map(({ title, body, url, image }) => (
+      courses.map((course) => (
         <Card
-          title={title}
-          body={body}
-          href={"/education/course/" + url}
+          title={course.frontmatter.title}
+          body={course.frontmatter.description}
+          href={"/education/course/" + course.frontmatter.title}
           button_title="Saber mas"
-          image={image}
+          image={course.frontmatter.image?.src}
         />
       ))
     }
   </div>
-</Layout>
 
-<style></style>
+  <style></style>
+</Layout>
