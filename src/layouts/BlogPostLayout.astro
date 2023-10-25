@@ -10,8 +10,6 @@ const courses = posts.map((course) => ({
   url: course.url,
 }))
 
-console.log(frontmatter)
-
 const cream = "rgba(239, 240, 227, 1)"
 const caqui = "#4b97a"
 ---
@@ -53,16 +51,16 @@ const caqui = "#4b97a"
     align-items: center;
   }
 
+  article > h1 {
+    font-size: 50px;
+    font-family: "Gabarito", cursive;
+    line-height: 50px;
+    word-spacing: 2px;
+  }
   .blog-title {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     color: #247555;
-  }
-
-  article > h1 {
-    font-size: 50px;
-    font-family: "Gabarito", cursive;
-    line-height: 50px;
   }
 </style>
