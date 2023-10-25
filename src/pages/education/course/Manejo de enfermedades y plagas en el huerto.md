@@ -8,7 +8,7 @@ image:
     src: "https://www.gastrolabweb.com/u/fotografias/m/2021/6/21/f608x342-15108_44831_0.jpg",
     alt: "tipos de tierra imagen ejemplo",
   }
-description: "Algunas plagas comunes en un huerto "
+description: "Todo sobre el manejo de las enfermedades y plagas que pueden tener nuestros huertos"
 categoria: tierras
 ---
 
