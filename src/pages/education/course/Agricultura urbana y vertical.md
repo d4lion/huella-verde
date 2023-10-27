@@ -42,18 +42,22 @@ uso del espacio y cultivar de manera eficiente
 
 
 <style>
-
   iframe {
     width: 100%;
     height: 420px;
   }
 
+  b {
+    font-weight: 800;
+    color: #004d2e;
+    font-size: 18px;
+  }
 
-  .post-title{
+  .post-title {
     font-family: "Open Sans", sans-serif;
-    font-size:  40px;
+    font-size: 40px;
     font-weight: 900;
-    color: #247555;
+    color: #00814d;
     padding: 10px;
     margin: 10px;
     line-height: 100%;
@@ -63,7 +67,7 @@ uso del espacio y cultivar de manera eficiente
 
   .post-sub-title {
     font-family: "Open Sans", sans-serif;
-    font-size:  30px;
+    font-size: 30px;
     font-weight: 500;
     color: #247555;
     margin: 5px;
@@ -75,7 +79,7 @@ uso del espacio y cultivar de manera eficiente
 
   .post-mini-title {
     font-family: "Open Sans", sans-serif;
-    font-size:  20px;
+    font-size: 20px;
     font-weight: 500;
     color: #247555;
     margin: 5px;
@@ -85,18 +89,17 @@ uso del espacio y cultivar de manera eficiente
   }
 
 
-  .list-container > ul {
+  .list-container>ul {
     list-style: disc;
     margin: 1rem 2%;
   }
 
-  .list-container > ul > li {
+  .list-container>ul>li {
     margin: 1rem;
   }
 
-  .list-container > li {
+  .list-container>li {
     margin: 10px;
 
   }
-
 </style>

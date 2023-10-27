@@ -64,12 +64,18 @@ Una vez identificadas las plagas o enfermedades, puedes implementar estrategias 
     height: 420px;
   }
 
+  b {
+    font-weight: 800;
+    color: #004d2e;
+    font-size: 18px;
+  }
+
 
   .post-title{
     font-family: "Open Sans", sans-serif;
     font-size:  40px;
     font-weight: 900;
-    color: #247555;
+    color: #00814d;
     padding: 10px;
     margin: 10px;
     line-height: 100%;
@@ -103,7 +109,7 @@ Una vez identificadas las plagas o enfermedades, puedes implementar estrategias 
 
   .list-container > ul {
     list-style: disc;
-    margin: 1rem 10%;
+    margin: 1rem 2%;
   }
 
   .list-container > ul > li {
