@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro"
+import TeamCard from "../components/equipo/TeamCard.astro"
+
+// Images
+import Daniel from "../assets/Team/Daniel.jpeg"
+import Ximena from "../assets/Team/ximena.jpg"
+import Isabela from "../assets/Team/Isabela.jpg"
+---
+
+<Layout title="Huella Verde | Quienes Somos">
+  <div class="equipo-container m-12">
+    <div class="team-card">
+      <TeamCard
+        image={Daniel.src}
+        body="Soy estudiante de la institucion educativa jose migue de restrepo y puerta un total apasionado por la programacion y los programas virtuales, nací en Medellín, Antioquía, desde pequeño he tenido una fascinacion completa de todo lo que respecta a las tecnologías, actualmente me encuentro cursando el grado once y proximamente continuaré mis estudios en la Universidad Nacional de Colombia"
+        name="Daniel Martínez Tamayo"
+        role="Lider"
+      />
+
+      <TeamCard
+        image={Ximena.src}
+        body="Mi nombre es Ximena Brand Agudelo estudio en la José Miguel De Restrepo y Puerta. Vivo en el Tablazo junto a mis padres y mis hermanos. Estoy cursando el grado once y la profundización en Ciencias y Matemáticas. Desde siempre he estado interesada en los temas científicos y ecológicos, me he inclinado a la botánica, ya que para mi es muy importante saber el origen de los vegetales y cultivarlos correctamente de una manera segura."
+        name="Ximena Brand Agudelo"
+        role="Escritora"
+      />
+
+      <TeamCard
+        image={Isabela.src}
+        body="Soy isabela Agudelo, tengo 15 años, nací el 5 de noviembre de 2007, en Medellín. vivo con mi mama, el esposo de mi mama y mis dos hermanos en Copacabana-horizontes. me dedico a estudiar, estudio en la José miguel y estoy cursando el  grado 11. estoy en profundización de ciencias y matemáticas. me gusta el baile y los deportes, pero no los practico últimamente. voy  ah ir a la universidad de envigado a estudiar comercio."
+        name="Isabela Brand Agudelo"
+        role="Escritora"
+      />
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .equipo-container {
+  }
+
+  .team-card {
+    margin: 1rem 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+</style>
