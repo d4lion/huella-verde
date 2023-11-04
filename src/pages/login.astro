@@ -1,0 +1,88 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+// Images
+import logo from "../assets/login/logo-huella-verde.svg"
+
+// Css props
+const soft_caqui = "#318161"
+const caqui = "#36a076"
+const cream = "rgba(239, 240, 227, 1)"
+---
+
+<Layout title="Login">
+  <div class="form-container">
+    <form>
+      <div class="title">
+        <img src={logo.src} alt="logo" />
+        <p>Huella Verde</p>
+      </div>
+      <input type="text" name="" placeholder="Usuario" />
+      <input type="password" name="" placeholder="Contraseña" />
+      <button>Inicia sesion</button>
+      <div class="help-container">
+        <a href="#">
+          <p>¿Olvidaste tu contraseña?</p>
+        </a>
+        <a href="#">
+          <p>Registrarse</p>
+        </a>
+      </div>
+    </form>
+  </div>
+</Layout>
+
+<style define:vars={{ soft_caqui, caqui, cream }}>
+  .form-container {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+  }
+
+  form {
+    display: grid;
+    gap: 1rem;
+    padding: 3.5rem;
+    border-radius: 50px 0px 50px 0px / 25px 0px 25px 0px;
+    margin-bottom: 25%;
+    background-color: var(--soft_caqui);
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+  }
+
+  .title > img {
+    height: 2rem;
+  }
+
+  form > input {
+    padding: 1rem;
+    border-radius: 2px;
+    color: rgb(68, 68, 68);
+    background-color: var(--cream);
+  }
+
+  form > input::placeholder {
+    color: gray;
+  }
+
+  form > button {
+    background-color: var(--cream);
+    padding: 1rem;
+  }
+
+  form > button:hover {
+    background-color: rgb(217, 218, 206);
+  }
+
+  .help-container {
+    display: grid;
+    gap: 1rem;
+    color: rgba(239, 240, 227, 1);
+  }
+</style>
